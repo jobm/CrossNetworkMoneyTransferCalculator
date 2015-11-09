@@ -20,8 +20,8 @@ public class mainPage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final Button login = (Button)findViewById(R.id.next);
-        login.setOnClickListener(new View.OnClickListener() {
+        final Button next = (Button)findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 startActivity(new Intent(getBaseContext(), TabLayoutMain.class));
             }
