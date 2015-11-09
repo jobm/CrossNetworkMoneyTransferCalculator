@@ -4,6 +4,7 @@ package com.example.kimaiga.transfercalculator;
  * Created by kimaiga on 11/9/15.
  */
 import android.os.Bundle;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
