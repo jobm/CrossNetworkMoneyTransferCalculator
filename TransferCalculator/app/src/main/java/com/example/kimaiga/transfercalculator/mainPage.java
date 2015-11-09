@@ -27,12 +27,13 @@ public class mainPage extends AppCompatActivity {
 
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                Intent navigate = new Intent(getBaseContext(), TabLayout.class);
+
+                Intent intent = new Intent(getApplicationContext(), TabLayoutMain.class);
                 Bundle bundle = new Bundle();
-                bundle.putInt("amount",100);
-                navigate.putExtras(bundle);
-                startActivity(navigate);
-                finish();
+                bundle.putInt("amnt", Integer.parseInt(amount.
+                        getText().toString()));
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }
