@@ -1,6 +1,8 @@
 package com.example.kimaiga.transfercalculator;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+
 
 public class mainPage extends AppCompatActivity {
 
@@ -27,12 +30,15 @@ public class mainPage extends AppCompatActivity {
 
         next.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
+                SharedPreferences sharedpreferences = getSharedPreferences("Lib", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.clear();
+
+                editor.putInt("amount",Integer.parseInt(amount.
+                        getText().toString()));
+                editor.commit();
 
                 Intent intent = new Intent(getApplicationContext(), TabLayoutMain.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("amnt", Integer.parseInt(amount.
-                        getText().toString()));
-                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
