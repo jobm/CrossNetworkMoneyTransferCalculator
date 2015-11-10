@@ -16,9 +16,13 @@ public class SafaricomFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.safaricom_layout, container, false);
+        View view = inflater.inflate(R.layout.safaricom_layout, container, false);
+        Bundle bundle = getArguments();
+        if(bundle != null)
+            Log.d("Amounts:: " + bundle.getInt("amnt"), "KSH");
+        return view;
 //        Bundle bundle = getIntent().getExtras();
-//        int amount = bundle.getInt("amount");
-//        Log.d("Amount:: " + amount, "KSH");
+//        if(bundle != null)
+//            Log.d("Amount:: " + bundle.getInt("amnt"), "KSH");
     }
 }

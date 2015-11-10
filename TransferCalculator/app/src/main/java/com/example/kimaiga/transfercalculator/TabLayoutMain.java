@@ -6,6 +6,7 @@ package com.example.kimaiga.transfercalculator;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -40,7 +41,7 @@ public class TabLayoutMain extends AppCompatActivity {
                 viewPager.setCurrentItem(tab.getPosition());
                 Bundle bundle = getIntent().getExtras();
                 if(bundle != null)
-                    Log.d("Amount:: " + bundle.getInt("amnt"), "KSH");
+                    Log.d("Amounts:: " + bundle.getInt("amnt"), "KSH");
             }
 
             @Override
