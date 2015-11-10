@@ -19,7 +19,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Withdraw Registered Cost"
+        android:text="Unregistered User"
         android:id="@+id/textView2"
         android:textAlignment="center"
         android:layout_centerVertical="true"
@@ -30,8 +30,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Withdraw Unregistered"
-        android:id="@+id/textView3"
+        android:text="Withdrawal Cost"
+        android:id="@+id/withdraw_cost"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
@@ -59,9 +59,8 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="New Text"
         android:id="@+id/textView6"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/withdraw_cost"
         android:layout_centerHorizontal="true"
         android:textAlignment="center" />
 </RelativeLayout>

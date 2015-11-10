@@ -40,6 +40,7 @@ public class mainPage extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), TabLayoutMain.class);
                 startActivity(intent);
+                amount.setText("");
             }
         });
     }
