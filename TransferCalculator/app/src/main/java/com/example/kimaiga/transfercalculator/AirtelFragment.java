@@ -25,7 +25,7 @@ public class AirtelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         final View view =  inflater.inflate(R.layout.airtel_layout, container, false);
-        txt = (TextView)view.findViewById(R.id.textView6);
+        txt = (TextView)view.findViewById(R.id.withdraw_cost);
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Lib", Context.MODE_PRIVATE);
         amount = (sharedPreferences.getInt("amount",0));
         txt.setText(Integer.toString(withdrawCalculateCosts(amount)));
